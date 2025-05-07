@@ -1,0 +1,320 @@
+/* Importación de la fuente 'Poppins' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Estilos generales para todos los elementos */
+*{
+    margin: 0;  /* Elimina los márgenes */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  /* Elimina los subrayados de los enlaces */
+    list-style: none;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url("Imagenes/Bg3.jpg"); /* Imagen de fondo */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    padding: 0;
+    color: white;
+}
+
+/* Estilos del encabezado */
+header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url("Imagenes/Fondo.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;  /* No repite la imagen de fondo */
+    background-size: cover;
+    min-height: 10vh;  /* Altura mínima del encabezado */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between;  /* Espacia los elementos a los extremos del encabezado */
+    padding: 0 50px;  /* Agrega relleno a los lados izquierdo y derecho */
+}
+
+/* Estilos del logo */
+.logo span {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos para los enlaces dentro del menú de navegación */
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Estilo para los enlaces cuando se pasa el mouse por encima */
+nav a:hover {
+    color: #e0986e;
+}
+
+/* Estilos específicos para el logo dentro del encabezado */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos de los enlaces dentro de la barra de navegación */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a img {
+    width: 30px;
+    height: auto; 
+    vertical-align: middle; 
+    margin-left: 10px;
+    border: none; 
+    cursor: pointer;
+}
+
+nav a:hover img {
+    opacity: 0.8; 
+}
+
+/* Estilos principales */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Estilos de los botones de categorías */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #f7b731;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.tabs button.active,
+.tabs button:hover {
+    background-color: #ff9f43;
+}
+
+/* Estilos de la galería de productos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* Para las columnas de producto */
+@media (min-width: 768px) {
+  .grid-productos {
+      grid-template-columns: repeat(4, 1fr);   
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-productos {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.producto .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f7b731;
+    margin-bottom: 15px;
+}
+
+.producto .rating {
+    font-size: 18px;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.boton-agregar {
+    padding: 10px 20px;
+    background-color: #CE9678;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+    background-color: #ffc043;
+}
+
+/* Formulario de pedido */
+#pedidos .contenedor2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#pedidos .btn {
+    padding: 10px 20px;
+    background-color: #389ce8;
+    color: rgb(52, 47, 47);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#pedidos .btn:hover {
+    background-color: #72eef0;
+}
+
+.form-container {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #333;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-container label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.form-container .btn-submit {
+    padding: 10px 20px;
+    background-color: #f7b731;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container .btn-submit:hover {
+    background-color: #ff9f43;
+}
+
+/* Ocultar productos no seleccionados */
+.producto.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #f7b731;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+
+
+  

@@ -1,0 +1,473 @@
+/* Fuente 'Poppins' desde Google Fonts con varios grosores */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Aplica a todos los elementos: quita márgenes, relleno, quita decoración de texto y viñetas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total */
+    text-decoration: none;
+    list-style: none;
+}
+/* Define la fuente principal para todo el cuerpo de la página */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centra el contenido horizontalmente y limita el ancho máximo a 1500px */
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Define fondo del header con imagen oscurecida y estilos generales */
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),   /* Capa superior negra semitransparente */
+        rgba(0, 0, 0, 0.7)), 
+        url("Imagenes/Fondo.jpg");  /* Imagen de fondo */
+    background-position: center bottom; /* Centra la imagen horizontal y la alinea abajo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;  /* Ocupa cierta parte de la pantalla */
+    display: flex;
+    align-items: center;  /* Centra el contenido verticalmente */
+}
+
+/* Contenedor del menú de navegación */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para el texto del logo */
+.logo {
+    color: #FFFDFC;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Estilo de la lista del menú (horizontal y con espacio entre enlaces) */
+.menu .navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Elementos "li" dentro del menú, se alinean en línea */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/* Estilo de los enlaces del menú */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+/* Cuando se pasa el mouse sobre una imagen dentro del nav, cambia opacidad */  
+.nav a:hover img {
+    opacity: 0.8; 
+}
+
+/* Cuando se pasa el mouse sobre un enlace, cambia de color */
+.menu .navbar ul li a:hover{
+    color: #CE967B;
+}
+
+#menu {
+    display: none;
+}
+
+/* Ícono del menú (hamburguesa) */
+.menu-icono {
+    width: 30px;
+    filter: invert(1);  /* Invierte color, para ponerlo blanco */
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Centra el contenido dentro del encabezado */
+.header-content {
+    text-align: center;
+}
+
+/* Estilo del título principal */
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+/* Estilo del subtítulo */
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+/* Estilo del botón principal */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE9678;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+.btn-1:hover {
+    background-color: #ebad8d;
+}
+
+/* Sección principal de panadería */
+.panaderia {
+    padding: 100px 0;
+    background-color: #E1E2E6;
+    position: relative;
+}
+
+.panaderia-content {
+    text-align: center;
+}
+
+/* Título grande de la sección panadería */
+.panaderia-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+/* Agrupa las cajas de productos y las distribuye horizontalmente */
+.panaderia-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* Cada producto individual */
+.panaderia-1 {
+    padding: 0 25px;
+}
+
+.panaderia-1 img {
+    width: 200px;
+}
+
+/* Imagen decorativa (fondo) posicionada arriba a la derecha */
+.panaderia-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.panaderia-1 h3 {
+    color: #323337;
+    font-size: 20px;  /* Tamaño de fuente */
+    margin-bottom: 15px;
+}
+
+.Servicios {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),  /* Capa negra semitransparente */
+        rgba(0, 0, 0, 0.7)), 
+        url("Imagenes/Bg3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+/* Contenedor centrado para la sección Servicios */
+.Servicios-content {
+    text-align: center;
+}
+
+.Servicios-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.Servicios-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.Servicios-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Servicios-1 {
+    padding: 0 100px;
+}
+
+.Servicios-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.Servicios-1 h3 {
+    color: #EACCB3;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-2 {
+    background-image: url(Imagenes/pan-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49.98%;
+}
+
+.general-3 {
+    background-image: url(Imagenes/pan-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+/* Sección final de pie de página */
+.footer {
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Contenedor de contenido del footer en línea */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+/* Títulos en el footer */
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #d7c4c4;
+}
+
+/* Párrafos del footer sin margen adicional */
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .panaderia {
+        padding: 30px;
+    }
+
+    .panaderia-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .panaderia-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .panaderia-img {
+        display: none;
+    }
+
+    .Servicios {
+        padding: 30px;
+    }
+
+    .Servicios-content p {
+        padding: 0;
+    }
+
+    .Servicios-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .Servicios-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .panaderia-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Etiquetas para la vista y compatibilidad con navegadores -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Panadería Delicias</title>  <!-- Título de la página -->
+
+    <!-- Enlace a la hoja de estilos de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+    <!-- Sección de encabezado -->
+    <header>
+
+        <!-- Logo de la panadería -->
+        <div class="logo"><span>Rincón Panadero</span></div>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="Pedido.html"><img src="imagenes/Carrrito.png" alt="Ir a Pedidos" style="width: 50px; height: 50px;">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sección principal de productos -->
+    <main>
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <!-- Etiqueta de descripción general de los productos -->
+            <p>Disfruta de nuestra variedad de panes y dulces, hechos con los mejores ingredientes y el mayor cuidado.</p>
+
+            <!-- Filtros de categorías para los productos -->
+            <div class="tabs">
+                <button class="active" data-categoria="todos">Todos</button>
+                <button data-categoria="pan">Panes</button>
+                <button data-categoria="pizzas">Pizzas</button>
+                <button data-categoria="piononos">Piononos</button>
+                <button data-categoria="tortas">Tortas</button>
+                <button data-categoria="pye">Pye</button>
+                <button data-categoria="bizcochos">Bizcochos</button>
+            </div>
+
+            <!-- Galería de productos -->
+            <div class="gallery">
+                <div class="grid-productos">
+
+                    <!-- Cada producto es un div con clase 'producto' -->
+                    <div class="producto pan">
+                        <img src="Imagenes/PanFrances.jpg" alt="Pan Francés">
+                        <h3>Pan Francés</h3>
+                        <p>Un clásico crujiente por fuera y suave por dentro</p>
+                        <div class="precio">S/ 1.00</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/pancachito.jpg" alt="Pan Cachito">
+                        <h3>Pan Cachito</h3>
+                        <p>Un favorito relleno de jamón y queso, tierno y sabroso</p>
+                        <div class="precio">S/ 1.00</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/panintegral.jpg" alt="Pan Integral">
+                        <h3>Pan Integral</h3>
+                        <p>Una opción nutritiva, rica en fibra y de sabor profundo</p>
+                        <div class="precio">S/ 1.50</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/Panbollo.png" alt="Pan Bollo">
+                        <h3>Pan Bollo</h3>
+                        <p>Un pan suave y ligeramente dulce, ideal para cualquier ocasión</p>
+                        <div class="precio">S/ 2.00</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/panyema.jpg" alt="Pan de Yema">
+                        <h3>Pan de Yema</h3>
+                        <p>Un dulce bocado esponjoso con un distintivo toque amarillo</p>
+                        <div class="precio">S/ 1.50</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/panbaguete.jpeg" alt="Pan Baguette">
+                        <h3>Pan Baguette</h3>
+                        <p>Una barra crujiente con una miga llena de agujeros</p>
+                        <div class="precio">S/ 3.00</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/panpetit.jpg" alt="Pan Petit">
+                        <h3>Pan Petit</h3>
+                        <p>Pequeños bollos dorados, perfectos para compartir</p>
+                        <div class="precio">S/ 2.50</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+                    <div class="producto pan">
+                        <img src="Imagenes/Panciabatta.jpg" alt="Pan ciabatta">
+                        <h3>Pan Ciabatta </h3>
+                        <p>Un pan rústico con una textura abierta y sabor único</p>
+                        <div class="precio">S/ 1.50</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <button class="boton-agregar" onclick="mostrarFormulario('Pan Francés')">Añadir</button>
+                    </div>
+
+
+                    <div class="producto pye">
+                        <img src="Imagenes/Pienaranja.jpg" alt="Pay de Naranja">
+                        <h3>Pay de Naranja</h3>
+                        <p>Deliciosa y dulce, ideal para el desayuno.</p>
+                        <div class="precio">S/ 3.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pye">
+                        <img src="Imagenes/piemanzana.jpg" alt="Pay de Manzana">
+                        <h3>Pay de Manzana</h3>
+                        <p>Frutal y reconfortante, un clásico para disfrutar</p>
+                        <div class="precio">S/ 3.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pye">
+                        <img src="Imagenes/pielimon.jpg" alt="Pay de Limon">
+                        <h3>Pay de Limon</h3>
+                        <p>Ácido y refrescante, el toque perfecto para después de comer</p>
+                        <div class="precio">S/ 3.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pye">
+                        <img src="Imagenes/piechocolate.png" alt="Pay de Chocolate">
+                        <h3>Pay de Chocolate</h3>
+                        <p>Intenso y cremoso, un placer para los amantes del cacao</p>
+                        <div class="precio">S/ 2.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    
+
+                    <div class="producto pizzas">
+                        <img src="Imagenes/panpizza.jpg" alt="Pan Pizza">
+                        <h3>Pan Pizza</h3>
+                        <p>Enrollado y sabroso, una divertida alternativa a la pizza tradicional</p>
+                        <div class="precio">S/ 8.00</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pizzas">
+                        <img src="Imagenes/pizzapanmolde.png" alt="Pizza Pan de Molde">
+                        <h3>Pizza Pan de Molde</h3>
+                        <p>Rellena y horneada, una opción práctica y deliciosa</p>
+                        <div class="precio">S/ 6.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pizzas">
+                        <img src="Imagenes/pizzacasera.jpg" alt="Pizza Casera">
+                        <h3>Pizza Casera</h3>
+                        <p>Mini y con sabor auténtico, ideal para un antojo individual</p>
+                        <div class="precio">S/ 9.00</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto pizzas">
+                        <img src="Imagenes/pizzawaffle.jpg" alt="Pizza Waffle">
+                        <h3>Pizza Waffle</h3>
+                        <p>Crujiente y original, una base diferente para tus ingredientes favoritos</p>
+                        <div class="precio">S/ 5.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+
+
+                    <div class="producto piononos">
+                        <img src="Imagenes/empanadapollo.jpg" alt="Empanada de Pollo">
+                        <h3>Empanada de Pollo</h3>
+                        <p>Rellena de pollo jugoso con una masa dorada y crocante.</p>
+                        <div class="precio">S/ 3.00</div>
+                        <div class="rating">⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto piononos">
+                        <img src="Imagenes/piononomanjar.jpg" alt="Pionono de Manjar">
+                        <h3>Pionono de Manjar</h3>
+                        <p>Relleno de dulce de leche con una masa dorada y crocante</p>
+                        <div class="precio">S/ 3.00</div>
+                        <div class="rating">⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto piononos">
+                        <img src="Imagenes/piononochocolate.png" alt="Pionono de Chocolate">
+                        <h3>Pionono de Chocolate</h3>
+                        <p>Relleno de chocolate con una masa dorada y crocante</p>
+                        <div class="precio">S/ 3.00</div>
+                        <div class="rating">⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto piononos">
+                        <img src="Imagenes/piononomango.jpg" alt="Pionono de Mango">
+                        <h3>Pionono de Mango</h3>
+                        <p> Relleno de mango con una masa dorada y crocante</p>
+                        <div class="precio">S/ 3.00</div>
+                        <div class="rating">⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    
+
+                    <div class="producto tortas">
+                        <img src="Imagenes/tortahelada.jpg" alt="Torta Helada">
+                        <h3>Torta Helada</h3>
+                        <p>Refrescante y suave, perfecta para un postre helado</p>
+                        <div class="precio">S/ 22.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto tortas">
+                        <img src="Imagenes/tortanegra.jpg" alt="Torta Selva Negra">
+                        <h3>Torta Selva Negra</h3>
+                        <p>Chocolate intenso con cerezas y crema batida, un clásico irresistible</p>
+                        <div class="precio">S/ 25.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto tortas">
+                        <img src="Imagenes/torta3leches.jpg" alt="Torta Tres Leches">
+                        <h3>Torta Tres Leches</h3>
+                        <p>Esponjosa y bañada en tres tipos de leche, un postre húmedo y dulce</p>
+                        <div class="precio">S/ 30.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto tortas">
+                        <img src="Imagenes/tortacremavolteada.png" alt="Torta Crema Volteada">
+                        <h3>Torta Crema Volteada</h3>
+                        <p>Suave flan de caramelo, un postre tradicional y delicioso</p>
+                        <div class="precio">S/ 25.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    
+
+                    <div class="producto bizcochos">
+                        <img src="Imagenes/bizcoplatano.jpg" alt="Bizcocho de Platano">
+                        <h3>Bizcocho de Platano</h3>
+                        <p>Dulce y húmedo, con el sabor natural del plátano maduro</p>
+                        <div class="precio">S/ 5.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto bizcochos">
+                        <img src="Imagenes/queque.jpg" alt="Queque">
+                        <h3>Queque</h3>
+                        <p>Esponjoso y versátil, perfecto para acompañar tu café o té</p>
+                        <div class="precio">S/ 2.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto bizcochos">
+                        <img src="Imagenes/budin.jpg" alt="Budín">
+                        <h3>Budín</h3>
+                        <p>Cremoso y reconfortante, un postre clásico con una textura suave</p>
+                        <div class="precio">S/ 4.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                    <div class="producto bizcochos">
+                        <img src="Imagenes/biscopera.png" alt="Bizcocho de Peru">
+                        <h3>Bizcocho de Pera</h3>
+                        <p>Delicado y aromático, con trozos suaves de pera</p>
+                        <div class="precio">S/ 3.50</div>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <a href="Pedido.html">
+                            <button class="boton-agregar">Añadir</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Llama al formulario de producto en JavaScript-->
+    <script src="productos.js"></script>
+</body>
+</html>

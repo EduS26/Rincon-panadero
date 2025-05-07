@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Configuración del documento: codificación, compatibilidad y vista responsive -->
+    <meta charse="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viemport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la pestaña -->
+    <title>SiteWeb</title>
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">   <!-- Enlace al archivo de estilos CSS -->
+</head>
+
+<body>
+    
+    <!-- Encabezado del sitio con logo, menú y bienvenida -->
+    <header class="header">
+
+        <div class="menu container">
+
+            <!-- Logo del sitio -->
+            <a href="#" class="logo" >Rincón Panadero</a>
+
+            <!-- Menú (checkbox oculto y etiqueta con ícono) -->
+            <input type="checkbox" id="menu" />   <!-- Checkbox oculto para menú -->
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <!-- Navegación principal -->
+            <nav class="navbar">
+                <ul>
+                    <!-- Enlace a sitios -->
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Pedido.html"><img src="imagenes/Carrrito.png" alt="Ir a Pedidos" style="width: 50px; height: 50px;">
+                    </a></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Contenido principal del encabezado -->
+        <div class="header-content container">
+
+            <h1>Rincón Panadero</h1>
+            <p>
+                "Somos más que una panadería, somos parte de tu comunidad. Acércate a disfrutar del aroma del pan recién horneado, comparte un momento especial con nuestros productos y siente el calor de hogar en cada bocado."            
+            </p>
+        </div>  
+    </header>
+
+
+     <!-- Sección de productos destacados -->
+    <section class="panaderia">
+
+        <!-- Imagen de fondo o decorativa -->
+        <img class="panaderia-img" src="imagenes/bgx.png" alt="">
+
+        <div class="panaderia-content container">
+
+            <h2>Momentos Perfectos, Panes Ideales</h2>
+            <!-- Etiqueta de comentario-->
+            <p class="txt-p">
+                Ya sea para un desayuno energético, un almuerzo delicioso o una cena especial, tenemos el pan ideal para acompañar tus mejores momentos.
+            </p>
+
+             <!-- Grupo de productos -->
+            <div class="panaderia-group">
+
+                <!-- Producto 1 -->
+                <div class="panaderia-1">
+                    <img src="imagenes/image-removebg-preview (2).png" alt="">
+                    <h3>Pan Baguette</h3>
+                    <p>
+                        "Elegante y versátil, nuestro Baguette Tradicional alargado, ideal para disfrutarla en familia”
+                    </p>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="panaderia-1">
+                    <img src="imagenes/image-removebg-preview (3).png" alt="">
+                    <h3>Pan Francés</h3>
+                    <p>
+                        "¿Imaginas un desayuno perfecto? Nuestro Pan Francés, tostado a la perfección,listo para ser acompañado con un café, protagonista de tus mañanas."
+                    </p>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="panaderia-1">
+                    <img src="imagenes/image-removebg-preview (4).png" alt="">
+                    <h3>Pan Petit</h3>
+                    <p>
+                        "Suave y esponjoso, nuestro pan petit artesanal es la base perfecta para tus creaciones gourmet.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Sección de servicios -->
+    <main class="Servicios">
+
+        <div class="Servicios-content container">
+            <h2>Servicios</h2>  <!-- Título -->
+
+            
+            <div class="Servicios-group">
+
+                <div class="Servicios-1">
+                    <img src="Imagenes/i1.svg" alt="">  <!-- Ícono del servicio -->
+                    <h3>Eventos Corporativos</h3>
+                </div>
+                <div class="Servicios-1">
+                    <img src="Imagenes/i2.svg" alt="">
+                    <h3>Celebraciones Especiales</h3>
+                </div>
+                <div class="Servicios-1">
+                    <img src="Imagenes/i3.svg" alt="">
+                    <h3>Personalizados</h3>
+                </div>
+
+            </div>
+
+            <!-- Descripción de los servicios -->
+            <p>
+                “Ofrecemos productos ideales para acompañar tus eventos y hacer tus momentos especiales inolvidables. Cada producto es elaborado de forma artesanal con insumos de alta calidad, garantizando frescura, sabor auténtico y una presentación cuidada”
+            </p>
+        </div>
+    </main>
+
+    <!-- Sección motivacional 1 -->
+    <section class="general">
+
+        <div class="general-1">
+            <h2>Del Horno a tu Mesa</h2>
+            <p>
+                Disfruta del sabor auténtico del pan recién horneado, elaborado diariamente con ingredientes frescos y de la más alta calidad
+            </p>
+        </div>
+        <div class="general-2"></div>
+
+    </section>
+
+    <!-- Sección motivacional 2 -->
+    <section class="general">
+
+        <div class="general-3"></div>  <!-- Imagen o fondo desde CSS -->
+
+        <div class="general-1">
+            <h2>Aroma que Enamora</h2>
+            <p>
+                Déjate envolver por el irresistible aroma del pan recién horneado y descubre una explosión de sabor en cada creación
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección del blog -->
+    <section class="blog container">
+
+        <h2>Blog</h2>
+        <p>"Un espacio para compartir nuestra pasión por el buen pan"</p>
+
+        <div class="blog-content">
+
+            <!-- Entrada 1 del blog -->
+            <div class="blog-1">
+                <img src="imagenes/Blog1.jpg" alt="">
+                <h3>Un Mundo de Sabores para Ti</h3>
+                <p>
+                    Descubre nuestra selección de panes, dulces y especialidades artesanales
+                </p>
+            </div>
+
+            <!-- Entrada 2 del blog -->
+            <div class="blog-1">
+                <img src="imagenes/Blog2.jpg" alt="">
+                <h3>El Sabor de lo hecho en Casa</h3>
+                <p>
+                    Pan elaborado con dedicación y el toque único de nuestros maestros panaderos
+                </p>
+            </div>
+
+            <!-- Entrada 3 del blog -->
+            <div class="blog-1">
+                <img src="imagenes/Blog3.jpg" alt="">
+                <h3>Aroma a pan recién hecho</h3>
+                <p>
+                    El aroma inconfundible y la frescura que nos caracteriza, directo a tu mesa
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- Información de contacto -->
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 987 654 321</p>
+                <p>📧 rinconpanadero@gmail.com</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div>
+                <h3>Redes</h3>
+                <p>Facebook · Instagram · WhatsApp</p>
+            </div>
+
+            <!-- Navegación rápida -->
+            <div>
+                <h3>Explora</h3>
+                <p>Inicio · Productos · Pedidos</p>
+            </div>
+        </div>
+
+        <!-- Derechos de autor -->
+        <p class="copy">&copy; 2025 Rincón Panadero. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<html>
